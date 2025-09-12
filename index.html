@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorita - Podcast Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        /* Custom scrollbar for a more modern feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b; /* slate-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5; /* indigo-600 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6366f1; /* indigo-500 */
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-slate-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gradient">Autorita</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#objective" class="hover:text-indigo-400 transition-colors duration-300">Our Objective</a>
+                <a href="#examples" class="hover:text-indigo-400 transition-colors duration-300">Examples</a>
+                <a href="#location" class="hover:text-indigo-400 transition-colors duration-300">Location</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#objective" class="block py-2 hover:text-indigo-400">Our Objective</a>
+            <a href="#examples" class="block py-2 hover:text-indigo-400">Examples</a>
+            <a href="#location" class="block py-2 hover:text-indigo-400">Location</a>
+            <a href="#contact" class="block py-2 hover:text-indigo-400">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center pt-20 bg-grid-slate-800/[0.2]">
+            <div class="text-center container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
+                    Crafting Stories, <span class="text-gradient">Amplifying Voices.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-8">
+                    Welcome to Autorita, the professional podcast studio where your ideas find their voice. We provide state-of-the-art recording, production, and distribution services to bring your vision to life.
+                </p>
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 transform hover:scale-105 inline-block">
+                    Start Your Podcast
+                </a>
+            </div>
+        </section>
+
+        <!-- Objective Section -->
+        <section id="objective" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-2">Our Objective</h2>
+                    <p class="text-slate-400">Why we do what we do.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-slate-800/50 p-8 rounded-lg shadow-2xl border border-slate-700">
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        At Autorita, our mission is to democratize professional audio content creation. We believe everyone has a story worth telling and a voice worth hearing. Our studio is designed to be an accessible, creative hub for both seasoned podcasters and aspiring creators. We handle the technical complexities of audio production so you can focus on what matters most: your message. From crystal-clear recording quality to seamless editing and global distribution, we are your partners in creating impactful and engaging podcasts that resonate with audiences worldwide.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="py-20 md:py-32 bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-2">Our Work</h2>
+                    <p class="text-slate-400">Listen to what we've helped create.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Example 1 -->
+                    <div class="bg-slate-800 p-4 rounded-lg shadow-lg group">
+                        <img src="https://placehold.co/500x500/1e293b/a78bfa?text=Tech+Forward" alt="Podcast Cover Art" class="rounded-md mb-4 aspect-square object-cover group-hover:opacity-80 transition-opacity">
+                        <h3 class="text-xl font-bold">Tech Forward</h3>
+                        <p class="text-slate-400">Exploring the future of technology.</p>
+                    </div>
+                    <!-- Example 2 -->
+                    <div class="bg-slate-800 p-4 rounded-lg shadow-lg group">
+                        <img src="https://placehold.co/500x500/1e293b/3b82f6?text=Creative+Minds" alt="Podcast Cover Art" class="rounded-md mb-4 aspect-square object-cover group-hover:opacity-80 transition-opacity">
+                        <h3 class="text-xl font-bold">Creative Minds</h3>
+                        <p class="text-slate-400">Conversations with artists and innovators.</p>
+                    </div>
+                    <!-- Example 3 -->
+                    <div class="bg-slate-800 p-4 rounded-lg shadow-lg group">
+                        <img src="https://placehold.co/500x500/1e293b/f472b6?text=The+Daily+Grind" alt="Podcast Cover Art" class="rounded-md mb-4 aspect-square object-cover group-hover:opacity-80 transition-opacity">
+                        <h3 class="text-xl font-bold">The Daily Grind</h3>
+                        <p class="text-slate-400">Business insights and startup stories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Location Section -->
+        <section id="location" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-2">Visit Our Studio</h2>
+                    <p class="text-slate-400">Located in the heart of Joinville, SC.</p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-2xl border-2 border-slate-700">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.908078696112!2d-48.84803368496739!3d-26.32924518338258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deaf665851412d%3A0x69f7831f4b0ddc8a!2sR.+das+Palmeiras+-+Centro%2C+Joinville+-+SC%2C+Brazil!5e0!3m2!1sen!2sus!4v1662998855447!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 bg-slate-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4">Ready to Start?</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto mb-10">
+                    Reach out to us to discuss your project. Whether you're looking to book studio time, partner with us, or just have a question, we're here to help.
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <!-- Interactive Email Buttons -->
+                    <a href="mailto:contato@autorita.com?subject=Studio%20Booking%20Inquiry" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-transform duration-300 transform hover:scale-105">
+                        Book Studio Time
+                    </a>
+                    <a href="mailto:parcerias@autorita.com?subject=Partnership%20Proposal" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-lg transition-transform duration-300 transform hover:scale-105">
+                        Propose a Partnership
+                    </a>
+                    <a href="mailto:info@autorita.com?subject=General%20Question" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-lg transition-transform duration-300 transform hover:scale-105">
+                        Ask a Question
+                    </a>
+                </div>
+
+                <div class="text-slate-400">
+                    <p>Or contact us directly:</p>
+                    <p class="font-semibold text-lg text-slate-200 mt-2">info@autorita.com</p>
+                    <p class="font-semibold text-lg text-slate-200">+55 (47) 99999-8888</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+             <p>&copy; 2025 Autorita. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
